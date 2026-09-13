@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="ja" data-lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title data-ja="Mercury ― 傾けて運ぶ水銀迷路" data-en="Mercury ― Liquid Maze">Mercury ― 傾けて運ぶ水銀迷路</title>
+<meta name="description" content="盤ごと傾けて、液体の水銀をゴールへ運ぶパズル。16ステージ、20種類以上の仕掛け。／ A puzzle about tilting the board to pour liquid mercury into the goal.">
+<meta property="og:title" content="Mercury ― 傾けて運ぶ水銀迷路">
+<meta property="og:description" content="盤ごと傾けて、液体の水銀をゴールへ運ぶパズル。16ステージ、20種類以上の仕掛け。">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/icon.png">
+<link rel="icon" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500;600&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap head-row">
+    <a class="brand" href="index.html"><img src="assets/icon.png" alt=""> Mercury</a>
+    <nav class="head-nav">
+      <a href="#play" class="hide-xs"><span lang="ja">遊び方</span><span lang="en">How to play</span></a>
+      <a href="#stages" class="hide-xs"><span lang="ja">仕掛け</span><span lang="en">Stages</span></a>
+      <a href="privacy.html"><span lang="ja">プライバシー</span><span lang="en">Privacy</span></a>
+      <div class="langs">
+        <button type="button" data-lang="ja" aria-pressed="true">JA</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ── ヒーロー ───────────────────────── -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">iPhone / iPad &nbsp;·&nbsp; <span lang="ja">パズル</span><span lang="en">Puzzle</span></p>
+      <h1><span lang="ja">銀色の水たまりを、<br>こぼさずに運ぶ。</span><span lang="en">A pool of liquid silver.<br>Don't spill it.</span></h1>
+      <p class="tag"><span lang="ja">盤ごと傾けて、液体の水銀をゴールの穴へ導くパズル。</span><span lang="en">Tilt the whole board to guide liquid mercury into the goal.</span></p>
+      <p class="sub"><span lang="ja">水銀はひと粒ずつが本物の流体としてふるまいます。急げば散らばり、ためらえば時間が足りない。「どれだけ通せたか」がそのまま成績になります。</span><span lang="en">Every drop is simulated fluid. Rush and it scatters, hesitate and the clock runs out. Your score is simply how much of it you got through.</span></p>
+
+      <div class="cta-row">
+        <a class="badge" href="#" aria-disabled="true">
+          <span>
+            <span class="small"><span lang="ja">近日公開</span><span lang="en">Coming soon</span></span>
+            <span class="big"><span lang="ja">App Store</span><span lang="en">on the App Store</span></span>
+          </span>
+        </a>
+        <span class="cta-note"><span lang="ja">iOS 15.0 以降 ／ 無料 ／ 広告・課金なし</span><span lang="en">Requires iOS 15.0 · Free · No ads, no IAP</span></span>
+      </div>
+
+      <div class="stats">
+        <div class="stat"><div class="n">16</div><div class="k"><span lang="ja">ステージ</span><span lang="en">Stages</span></div></div>
+        <div class="stat"><div class="n">20+</div><div class="k"><span lang="ja">仕掛け</span><span lang="en">Mechanisms</span></div></div>
+        <div class="stat"><div class="n">★★★</div><div class="k"><span lang="ja">面ごとの評価</span><span lang="en">Per stage</span></div></div>
+        <div class="stat"><div class="n">0</div><div class="k"><span lang="ja">広告・課金</span><span lang="en">Ads &amp; IAP</span></div></div>
+      </div>
+    </div>
+
+    <div class="hero-art">
+      <span class="bead" aria-hidden="true"></span>
+      <span class="bead b2" aria-hidden="true"></span>
+      <div class="phone"><img src="assets/shots/stage-16.png" width="760" height="1652" alt="ゲーム画面 ― 色の関門を抜ける"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── 遊び方 ─────────────────────────── -->
+<section id="play">
+  <div class="wrap">
+    <p class="eyebrow"><span lang="ja">操作</span><span lang="en">Controls</span></p>
+    <h2><span lang="ja">指は3つの使い方しかしません。</span><span lang="en">Three things your fingers do.</span></h2>
+    <p class="lede"><span lang="ja">ボタンもメニューも要りません。盤を傾け、先を覗き、寄りと引きを変える。それだけです。</span><span lang="en">No buttons, no menus. Tilt the board, look ahead, change how close you are. That is all.</span></p>
+
+    <div class="steps">
+      <div class="step">
+        <h3><span lang="ja">1本指でドラッグ</span><span lang="en">Drag with one finger</span></h3>
+        <p><span lang="ja">盤が傾き、水銀が流れます。傾けた向きと角度がそのまま重力になります。</span><span lang="en">The board tilts and the mercury runs. The direction and angle you drag become gravity.</span></p>
+      </div>
+      <div class="step">
+        <h3><span lang="ja">タップ</span><span lang="en">Tap</span></h3>
+        <p><span lang="ja">その場所を1.5秒だけ覗きます。壁の向こうや、これから通る道を先に確かめられます。</span><span lang="en">Peek at that spot for 1.5 seconds — check what is beyond a wall before you commit.</span></p>
+      </div>
+      <div class="step">
+        <h3><span lang="ja">2本指でつまむ</span><span lang="en">Pinch</span></h3>
+        <p><span lang="ja">縮尺が変わります。細い通路は寄って、長い面は引いて。</span><span lang="en">Zoom in and out. Close for narrow corridors, back for the long stages.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── 成績 ───────────────────────────── -->
+<section style="background:var(--bg-2);border-block:1px solid var(--line-soft)">
+  <div class="wrap">
+    <p class="eyebrow"><span lang="ja">成績</span><span lang="en">Scoring</span></p>
+    <h2><span lang="ja">通した量が、そのまま点になる。</span><span lang="en">What you deliver is the score.</span></h2>
+    <p class="lede"><span lang="ja">クリアは「ゴールへ通した水銀の割合」で決まります。基準を超えたあとの数秒でさらに送り込めれば★が増えます。床の穴へ落とした水銀は戻りません。</span><span lang="en">You clear a stage by getting enough mercury through the goal. Keep pouring in the seconds after you pass the mark and you earn more stars. Mercury lost down a hole is gone for good.</span></p>
+
+    <div class="gauge-card">
+      <div class="gauge"><span class="fill"></span></div>
+      <div class="ticks">
+        <div class="tick" style="left:45%"><i></i><b>45%</b><span><span lang="ja">最低基準 ★</span><span lang="en">Clear ★</span></span></div>
+        <div class="tick" style="left:53%"><i></i><b>+8%</b><span><span lang="ja">★★</span><span lang="en">★★</span></span></div>
+        <div class="tick" style="left:63%"><i></i><b>+18%</b><span><span lang="ja">★★★</span><span lang="en">★★★</span></span></div>
+      </div>
+      <p class="gauge-note"><span lang="ja">例：基準が45%の面なら、63%まで通せば★★★。こぼしすぎて基準に届かなくなった時点で、そこで終わりです。</span><span lang="en">Example: on a stage with a 45% bar, 63% earns three stars. Spill enough that the bar is out of reach and the run ends there.</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ── 仕掛け ─────────────────────────── -->
+<section id="stages">
+  <div class="wrap">
+    <p class="eyebrow"><span lang="ja">16ステージ</span><span lang="en">16 stages</span></p>
+    <h2><span lang="ja">盤の上のものは、だいたい水銀の邪魔をします。</span><span lang="en">Most things on the board are in your way.</span></h2>
+    <p class="lede"><span lang="ja">ステージが進むごとに仕掛けがひとつずつ増えます。同じ解き方は二度使えません。</span><span lang="en">Each stage adds one more mechanism. The same solution never works twice.</span></p>
+
+    <div class="grid">
+      <div class="card">
+        <h3><span lang="ja">床</span><span lang="en">Floors</span></h3>
+        <ul>
+          <li><span lang="ja">摩擦のない氷 ― 止まれません</span><span lang="en">Frictionless ice — you cannot stop</span></li>
+          <li><span lang="ja">乗っていると崩れる床</span><span lang="en">Floors that crumble under weight</span></li>
+          <li><span lang="ja">開いたり閉じたりする床</span><span lang="en">Floors that open and close</span></li>
+          <li><span lang="ja">ベルトコンベア・加速床・粘着床</span><span lang="en">Conveyors, boost pads, sticky floors</span></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><span lang="ja">風</span><span lang="en">Wind</span></h3>
+        <ul>
+          <li><span lang="ja">横へ吹き流す扇風機</span><span lang="en">Fans that push you sideways</span></li>
+          <li><span lang="ja">巻き込む渦</span><span lang="en">Whirlpools that pull you in</span></li>
+          <li><span lang="ja">壁を越えさせる吹き上げ</span><span lang="en">Updrafts that lift mercury over walls</span></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><span lang="ja">移動</span><span lang="en">Passage</span></h3>
+        <ul>
+          <li><span lang="ja">一方通行のワープ ― 踏むと戻される罠</span><span lang="en">One-way warps — a trap that sends you back</span></li>
+          <li><span lang="ja">双方向のトンネル</span><span lang="en">Two-way tunnels</span></li>
+          <li><span lang="ja">鍵床と、開いたら閉じない扉</span><span lang="en">Key pads and doors that never shut again</span></li>
+          <li><span lang="ja">回る壁と床、バンパー</span><span lang="en">Rotating walls and floors, bumpers</span></li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="dots" aria-hidden="true">
+          <i style="background:var(--gate-red)"></i><i style="background:var(--gate-blue)"></i><i style="background:var(--gate-yellow)"></i><i style="background:var(--gate-purple)"></i><i style="background:var(--gate-green)"></i>
+        </div>
+        <h3><span lang="ja">色</span><span lang="en">Color</span></h3>
+        <p><span lang="ja">赤・青・黄の染料で水銀を染め、混ぜて紫や緑をつくります。関門は色がぴたりと合った水銀だけを通します。着色ライトは色を足すのではなく、塗り替えます。</span><span lang="en">Dye your mercury red, blue or yellow, then mix to make purple or green. A gate passes only mercury whose color matches exactly — and colored lights repaint the mercury rather than adding to it.</span></p>
+      </div>
+    </div>
+
+    <div class="shots">
+      <figure class="shot"><img src="assets/shots/menu.png" width="620" height="1348" alt="面えらび"><figcaption><span lang="ja">面えらび</span><span lang="en">Stage select</span></figcaption></figure>
+      <figure class="shot"><img src="assets/shots/stage-04.png" width="620" height="1348" alt="Level 04"><figcaption><span lang="ja">Stage 04 ― 落とさずに運ぶ</span><span lang="en">Stage 04 — mind the holes</span></figcaption></figure>
+      <figure class="shot"><img src="assets/shots/stage-15.png" width="620" height="1348" alt="Level 15"><figcaption><span lang="ja">Stage 15 ― 崩れる床</span><span lang="en">Stage 15 — crumbling floors</span></figcaption></figure>
+      <figure class="shot"><img src="assets/shots/stage-16-s.png" width="620" height="1348" alt="Level 16"><figcaption><span lang="ja">Stage 16 ― 色を混ぜて抜ける</span><span lang="en">Stage 16 — mix the colors</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ── ランキング・連絡先 ─────────────── -->
+<section id="support" style="background:var(--bg-2);border-top:1px solid var(--line-soft)">
+  <div class="wrap">
+    <p class="eyebrow">Game Center &nbsp;·&nbsp; <span lang="ja">サポート</span><span lang="en">Support</span></p>
+    <h2><span lang="ja">★の合計で競えます。</span><span lang="en">Ranked on total stars.</span></h2>
+    <p class="lede"><span lang="ja">集めた★の合計が Game Center のランキングに登録されます。サインインしなくてもゲームは通常どおり遊べます。ネットワーク接続は要りません。</span><span lang="en">Your total stars go to the Game Center leaderboard. The game plays normally without signing in, and needs no network connection.</span></p>
+
+    <div class="contact">
+      <p><span lang="ja">不具合の報告・ご意見・お問い合わせはこちらへ。日本語と英語どちらでも構いません。</span><span lang="en">Bug reports, feedback and questions are welcome, in English or Japanese.</span></p>
+      <a class="mail" href="mailto:akky0926@gmail.com">akky0926@gmail.com</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap foot-row">
+    <span>© 2026 Mercury</span>
+    <nav>
+      <a href="privacy.html"><span lang="ja">プライバシーポリシー</span><span lang="en">Privacy Policy</span></a>
+      <a href="#support"><span lang="ja">サポート</span><span lang="en">Support</span></a>
+    </nav>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+</body>
+</html>
